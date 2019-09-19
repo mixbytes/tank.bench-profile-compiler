@@ -8,7 +8,7 @@ module.exports = {
         profile: paths.entry,
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(paths.profilePath, 'dist'),
         filename: '[name].js',
         libraryTarget: 'umd',
         library: 'profile',

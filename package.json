@@ -1,6 +1,6 @@
 {
   "name": "tank.bench-profile-compiler",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Compiler for profiles used with mixbytes.tank",
   "license": "Apache-2.0",
   "repository": {
