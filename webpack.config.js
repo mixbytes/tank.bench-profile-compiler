@@ -4,6 +4,7 @@ const paths = require("./index");
 
 module.exports = {
     target: "node",
+    mode: "production",
     entry: {
         profile: paths.entry,
     },

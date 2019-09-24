@@ -22,8 +22,8 @@ The profile is a `node.js` project, containing `package.json` file with required
 To compile it with `tank.bench-profile-compiler` you follow the next steps:
 
 1. Install the dependencies with `npm install` command
-2. Install the `tank.bench-profile-compiler` globally with `npm install tank.bench-profile-compiler` command
-3. Run the `bpc` command in the folder with your project (or `bpc <folder of your project>`).
+2. Install the `tank.bench-profile-compiler` with `npm install tank.bench-profile-compiler` command
+3. Run the `npx bpc` command in the folder with your project (or `npx bpc <folder of your project>`).
 
 
 ### What about the typescript?
