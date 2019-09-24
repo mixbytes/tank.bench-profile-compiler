@@ -21,8 +21,9 @@ The `tank.bench-profile-compiler` is a tool, that will help you to do it using o
 The profile is a `node.js` project, containing `package.json` file with required dependencies.
 To compile it with `tank.bench-profile-compiler` you follow the next steps:
 
+0. Install nodejs v12 or higher
 1. Install the dependencies with `npm install` command
-2. Install the `tank.bench-profile-compiler` globally with `npm install tank.bench-profile-compiler` command
+2. Install the `tank.bench-profile-compiler` with `npm install -g tank.bench-profile-compiler` command
 3. Run the `bpc` command in the folder with your project (or `bpc <folder of your project>`).
 
 
