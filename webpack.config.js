@@ -22,7 +22,6 @@ module.exports = {
     node: {
         fs: "empty"
     },
-    // Add the loader for .ts files.
     module: {
         rules: [
             {
@@ -31,6 +30,10 @@ module.exports = {
                 options: {
                     configFileName: paths.tsconfig
                 }
+            },
+            {
+                test: /\.node$/,
+                use: 'node-loader'
             }
         ]
     },

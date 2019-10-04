@@ -1,6 +1,6 @@
 {
   "name": "tank.bench-profile-compiler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Compiler for profiles used with mixbytes.tank",
   "license": "Apache-2.0",
   "repository": {
@@ -24,6 +24,8 @@
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "check-node-version": "^4.0.1",
+    "node-loader": "^0.6.0",
+    "polkaprofile": "file:../tank.bench-haya/profileExamples/simple",
     "semver": "^6.3.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
