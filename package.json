@@ -24,7 +24,7 @@
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "check-node-version": "^4.0.1",
-    "node-loader": "^0.6.0",
+    "node-binary-loader": "file:./node-binary-loader",
     "semver": "^6.3.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
