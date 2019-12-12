@@ -38,6 +38,10 @@ if (!fs.existsSync(nodeModulesPath) || !fs.existsSync(packageLockPath)) {
 let packageLock = require(packageLockPath);
 Object.keys(packageLock.dependencies).forEach((depName) => {
     try {
+        const depInfo = packageLock.dependencies[depName];
+        if (depInfo.optional)
+            return;
+
         const depPath = path.resolve(nodeModulesPath, depName);
         const depPackagePath = path.resolve(depPath, "package.json");
         const depPackage = require(depPackagePath);
