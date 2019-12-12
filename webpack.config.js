@@ -33,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.node$/,
-                use: 'node-loader'
+                use: 'node-binary-loader'
             }
         ]
     },
