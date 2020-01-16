@@ -23,6 +23,7 @@ module.exports = {
         fs: "empty"
     },
     module: {
+        exprContextCritical: false,
         rules: [
             {
                 test: /\.tsx?$/,
@@ -33,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.node$/,
-                use: 'node-binary-loader'
+                use: require.resolve("./node-binary-loader")
             }
         ]
     },

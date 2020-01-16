@@ -61,6 +61,7 @@ Object.keys(packageLock.dependencies).forEach((depName) => {
         }
 
     } catch (e) {
+        console.log(e);
         console.error("Please rerun\nnpm install " + profilePath + "\nbefore compiling the profile");
         process.exit(-1);
     }
@@ -79,6 +80,6 @@ module.exports = {
     tsconfig: tsconfig
 };
 
-console.log("Compiling the profile...");
+console.log(`Compiling the profile ${pack.name} ...`);
 
 require("webpack-cli");
