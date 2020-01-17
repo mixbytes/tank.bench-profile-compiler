@@ -1,6 +1,6 @@
 {
   "name": "tank.bench-profile-compiler",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Compiler for profiles used with mixbytes.tank",
   "license": "Apache-2.0",
   "repository": {
@@ -14,21 +14,23 @@
   "private": false,
   "preferGlobal": true,
   "bin": {
-    "tank.bench-profile-compiler": "./index.js",
-    "bpc": "./index.js"
+    "tank.bench-profile-compiler": "./bpc-cli.js",
+    "bpc": "./bpc-cli.js"
   },
   "main": "index.js",
   "files": [
     "index.js",
     "webpack.config.js",
+    "bpc-cli.js",
     "node-binary-loader.js"
   ],
   "dependencies": {
-    "awesome-typescript-loader": "^5.2.1",
     "check-node-version": "^4.0.1",
     "semver": "^6.3.0",
-    "typescript": "^3.6.3",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4"
   }
 }
