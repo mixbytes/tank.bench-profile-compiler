@@ -1,6 +1,6 @@
 {
   "name": "tank.bench-profile-compiler",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Compiler for profiles used with mixbytes.tank",
   "license": "Apache-2.0",
   "repository": {
@@ -27,10 +27,7 @@
   "dependencies": {
     "check-node-version": "^4.0.1",
     "semver": "^6.3.0",
-    "webpack": "^4.40.2"
-  },
-  "devDependencies": {
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4"
+    "webpack": "^4.40.2",
+    "ts-loader": "^6.2.1"
   }
 }
