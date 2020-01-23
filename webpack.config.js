@@ -32,7 +32,8 @@ module.exports = function webpackConfig(entry, profilePath, tsconfig) {
                     loader: require.resolve('ts-loader'),
                     exclude: /node_modules/,
                     options: {
-                        configFile: tsconfig
+                        configFile: tsconfig,
+                        context: profilePath,
                     }
                 },
                 {
