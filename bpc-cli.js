@@ -7,9 +7,10 @@ if (process.argv.includes("-h")) {
 }
 
 compileProfile(process.argv[2] || ".").then(done => {
-    console.log("Profile is compiled, output file:");
+    console.log("Output file:");
     console.log(done.output);
     process.exit(0);
-}).catch(() => {
+}).catch((e) => {
+    console.error(e);
     process.exit(-1);
 });

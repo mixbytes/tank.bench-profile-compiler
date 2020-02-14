@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require("webpack");
 // const analyzer = require("webpack-bundle-analyzer");
 
-module.exports = function webpackConfig(entry, profilePath, tsconfig) {
+module.exports = function webpackConfig(entry, profilePath, tsconfig, customWebpackConfig) {
     return {
         target: "node",
         mode: "development",
@@ -47,6 +47,7 @@ module.exports = function webpackConfig(entry, profilePath, tsconfig) {
             // new analyzer.BundleAnalyzerPlugin({
             //     generateStatsFile: true
             // }),
-        ]
+        ],
+        ...customWebpackConfig
     };
 };

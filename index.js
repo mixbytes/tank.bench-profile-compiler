@@ -68,7 +68,13 @@ module.exports = async function compileProfile(profileDir, silent = false) {
         tsconfig = path.resolve(__dirname, "tsconfig.json");
     }
 
-    const wpConfig = webpackConfig(entry, profilePath, tsconfig);
+    let customWebpackConfig = {};
+    let customWebpackConfigPath = path.resolve(profilePath, "webpack.config.js");
+    if (fs.existsSync(customWebpackConfigPath)) {
+        customWebpackConfig = require(customWebpackConfigPath);
+    }
+
+    const wpConfig = webpackConfig(entry, profilePath, tsconfig, customWebpackConfig);
 
     console.log(`Compiling the profile ${pack.name}...`);
 
@@ -101,7 +107,7 @@ module.exports = async function compileProfile(profileDir, silent = false) {
                 });
             }
 
-            console.log(`The profile ${pack.name} is compiled!`);
+            console.log(`\nThe profile ${pack.name} is compiled!`);
             resolve({
                 output: `${profilePath}/dist/profile.js`
             });

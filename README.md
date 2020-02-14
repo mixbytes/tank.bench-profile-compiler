@@ -13,6 +13,10 @@ Please see [Tank.bench-common](https://github.com/mixbytes/tank.bench-common) to
 
 ## How to use it?  
 
-You can install the `tank.bench-profile-compiler` globally or locally in your profile project with the `npm install --save-dev tank.bench-profile-compiler` command.
+You can install the `tank.bench-profile-compiler` globally or locally in your profile project with the next command:
+
+```shell script
+npm install tank.bench-profile-compiler
+```
 
 After installing you will be able to compile your profile with the `npx bpc <folder of your project>` command.

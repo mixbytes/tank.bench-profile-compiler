@@ -1,6 +1,6 @@
 {
   "name": "tank.bench-profile-compiler",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Compiler for Tank.bench-profiles",
   "license": "Apache-2.0",
   "repository": {
